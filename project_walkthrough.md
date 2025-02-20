@@ -8,7 +8,7 @@ Login to Splunk:
 <br />
 <br />
 
-Create User for everyone in the team/group:
+Create a User account for everyone in the team/group:
 <img src="https://i.imgur.com/kVpQu65.jpeg"/>
 <br />
 <br />
@@ -31,7 +31,7 @@ Create User for everyone in the team/group:
 <br />
 <br />
 
-Select time to (WAT) and assign roles to the uesers created, then configure each user to change their password when signed in:
+Changed the timezone to (WAT) and assign roles to the users created, then configured each user to change their password when signed in:
 <img src="https://i.imgur.com/C5xDMFp.jpeg"/>
 <br />
 <br />
@@ -63,18 +63,18 @@ Click "Select File"
 <br />
 <br />
 
-Select "Next" and set Source Type as "Default"
+Select "Next" and set the Source Type as "Default"
 <img src="https://i.imgur.com/XuOTivT.jpeg"/>
 <br />
 <br />
 
-Click "Next" leave "Input Settings as "Default" then Review and Submit.
+Click "Next", leave "Input Settings as "Default" then Review and Submit.
 <img src="https://i.imgur.com/Rmx1RM0.jpeg"/>
 <br />
 <br />
 <img src="https://i.imgur.com/Nyzedco.jpeg"/>
 
-Select "Start Searching to begin analyzing the logs
+Select "Start Searching" to begin analyzing the logs
 <br />
 <br />
 <img src="https://i.imgur.com/hTA1xU0.jpeg"/>
@@ -120,7 +120,7 @@ Dashboard:
 
  <h2>Findings</h2>
 
-After analyzing the log file, i discovered the log contains multiple failed logins and authentication failures to a remote system. The attacker was trying to connect with a root privilege over an SSH session and most of the SSH request and Authentication came from an IP that was consistent:
+After analyzing the log file, I discovered the log contains multiple failed logins and authentication failures to a remote system. The attacker was trying to connect with a root privilege over an SSH session and most of the SSH requests and Authentication came from a consistent IP:
 
 
 Failed login request from: 103.99.0.122
@@ -128,5 +128,5 @@ Failed login request from: 103.99.0.122
 Authentication request from: 183.62.140.253
 
 
-The attacker also tried to login using a username “user” that wasn’t recorgnized by the system. The timestamp of the log also signified a brute-force attack that was done
+The attacker also tried to log in using the username “user” which wasn’t recognized by the system. The timestamp of the log also signified a brute-force attack that was done
 with an automated tool
